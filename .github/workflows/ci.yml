@@ -1,0 +1,8 @@
+
+rules:
+  - require_pull_request_reviews: true    # минимум 1 approve
+  - require_status_checks:                # CI должен пройти
+      - "build"
+      - "test"
+  - require_linear_history: true          # rebase, не merge commits
+  - dismiss_stale_reviews: true           # повторный review после push
