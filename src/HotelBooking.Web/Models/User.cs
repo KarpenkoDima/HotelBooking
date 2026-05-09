@@ -12,7 +12,7 @@
 
         // Role: User and Admin
         public string Role { get; set; } = "User";
-        public DateTime CreatedAt { get; set; }=DateTime.Now;
+        public DateTime CreatedAt { get; set; }=DateTime.UtcNow;
 
         // Navigation property EF Core
         public ICollection<Booking> Bookings { get; set; } =[];
